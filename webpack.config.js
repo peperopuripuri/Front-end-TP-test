@@ -22,10 +22,6 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader', 'postcss-loader']
       },
-      {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader'
-      }
     ]
   }
 };
