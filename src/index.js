@@ -1,3 +1,4 @@
+import './styles.css'
 const aside = document.querySelector('aside');
 const button = document.querySelector('button');
 const p = document.querySelector('p');
