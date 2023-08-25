@@ -22,7 +22,7 @@ h1 {
     align-self: flex-start;
 }
 
-aside {
+main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -74,16 +74,21 @@ button {
     font-size: x-large;
 }
 
+/* Media queries (converted to PostCSS) */
+
 @media (max-width: 900px) {
-    aside {
+    main {
         flex-direction: column;
     }
+
     p {
         width: auto;
     }
+
     .input_wrapper {
         width: 29vw;
     }
+
     button {
         position: relative;
         bottom: 35px;
@@ -97,14 +102,33 @@ button {
         width: 100%;
         justify-content: space-between;
     }
+
     .input_wrapper {
         margin: 0;
         width: 40vw;
     }
+
     button {
         position: unset;
         margin-top: 20px;
         width: 100%;
         margin-bottom: 2vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input_wrapper {
+        width: 100%;
+        margin-bottom: 3vw;
+    }
+
+    button {
+        align-self: flex-start;
+        margin-top: 0;
     }
 }
