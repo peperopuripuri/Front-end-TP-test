@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Webpack App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpack App</title>
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
+
 <body>
-  <script src="dist/bundle.js"></script>
+    <div class="widget_wrapper">
+        <h1>Where does it come from? Why do we use it?</h1>
+        <aside>
+            <p>
+                is it a long established that a reader will be
+                distracted by the readable content of a page when
+                looking at its layout.
+            </p>
+            <div class="inputs">
+                <div class="input_wrapper">
+                    <input type="text" name="Depart date" id="DepartDate" placeholder="Depart date">
+                    <img src="./source/calendar.svg" alt="calendar">
+                </div>
+                <div class="input_wrapper">
+                    <input type="text" name="ReturnDate" id="ReturnDate" placeholder="Return date">
+                    <img src="./source/calendar.svg" alt="calendar">
+                </div>
+                <button class="button" value="Search">SEARCH</button>
+            </div>
+        </aside>
+
+    </div>
+    <script src="./src/index.js"></script>
+    <script src="dist/bundle.js"></script>
 </body>
+
 </html>

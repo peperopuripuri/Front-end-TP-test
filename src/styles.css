@@ -1,0 +1,73 @@
+:root {
+    --main-bg-color: rgb(78, 132, 241);
+    --input-bg-color: white;
+    --input-text-color: grey;
+    --button-bg-color: orange;
+    --button-text-color: white;
+}
+
+.widget_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    max-width: 1024px;
+    min-width: 200px;
+    color: white;
+    padding: 0.5% 1.5%;
+}
+
+h1 {
+    align-self: flex-start;
+}
+
+aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+p {
+    margin-top: 0;
+    width: 22vw;
+}
+.inputs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.input_wrapper {
+    background: white;
+    border-radius: 2px;
+    width: 13.4vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+input {
+    border: none;
+    height: 90%;
+}
+
+img {
+    background: white;
+}
+
+button {
+    height: 5vh;
+    width: 13.4vw;
+    background: var(--input-bg-color);
+    color: var(--input-text-color);
+    border: none;
+    border-radius: 2px;
+}
+
+.button {
+    background-color: var(--button-bg-color);
+    text-align: center;
+    color: var(--button-text-color);
+    font-size: x-large;
+}
