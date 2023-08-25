@@ -24,4 +24,5 @@
 
 ### инструкция по развёртыванию и запуску на `*nix/OS X`
 - npm ci
+- npx webpack
 - npm start
