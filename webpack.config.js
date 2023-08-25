@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    filename: 'src/index.js', 
+    filename: 'bundle.js', // Change this to a suitable bundle filename
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {
@@ -21,6 +21,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader', 'postcss-loader']
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
       }
     ]
   }

@@ -1,5 +1,5 @@
 import './styles.css'
-const aside = document.querySelector('aside');
+const aside = document.querySelector('main');
 const button = document.querySelector('button');
 const p = document.querySelector('p');
 
