@@ -28,15 +28,18 @@ aside {
     align-items: flex-start;
     width: 100%;
 }
+
 p {
     margin-top: 0;
     width: 22vw;
 }
+
 .inputs {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .input_wrapper {
     background: white;
     border-radius: 2px;
@@ -47,9 +50,11 @@ p {
     justify-content: center;
     margin-right: 30px;
 }
+
 input {
     border: none;
     height: 90%;
+    width: 80%;
 }
 
 img {
@@ -63,11 +68,43 @@ button {
     color: var(--input-text-color);
     border: none;
     border-radius: 2px;
-}
-
-.button {
     background-color: var(--button-bg-color);
     text-align: center;
     color: var(--button-text-color);
     font-size: x-large;
+}
+
+@media (max-width: 900px) {
+    aside {
+        flex-direction: column;
+    }
+    p {
+        width: auto;
+    }
+    .input_wrapper {
+        width: 29vw;
+    }
+    button {
+        position: relative;
+        bottom: 35px;
+        align-self: self-end;
+        width: 30vw;
+    }
+}
+
+@media (max-width: 740px) {
+    .inputs {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .input_wrapper {
+        margin: 0;
+        width: 40vw;
+    }
+    button {
+        position: unset;
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
 }
